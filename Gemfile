@@ -6,7 +6,7 @@ gem 'rails', '3.2.14'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 group :development do
-  gem "pry"
+  gem 'pry-rails'
   gem 'meta_request'
   gem "better_errors"
   gem "spring"
@@ -24,7 +24,7 @@ group :development, :test do
   gem 'guard-rspec'
   gem 'spork-rails'
   gem 'guard-spork'
-  gem 'factory_girl_rails'
+  gem 'factory_girl_rails', :require => false
   gem 'capybara'
   gem 'launchy'
   gem 'selenium-webdriver'
@@ -95,6 +95,7 @@ gem "haml"
 gem "axlsx"
 gem "nokogiri"
 gem "newrelic_rpm"
+gem 'dotenv-rails'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

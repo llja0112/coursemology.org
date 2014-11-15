@@ -28,8 +28,7 @@ RSpec.configure do |config|
   config.include Warden::Test::Helpers
 
   config.include Capybara::DSL
-
-  Capybara.default_wait_time = 3
+  Capybara.default_wait_time = 10
 
   Capybara.register_driver :selenium_chrome do |app|
     Capybara::Selenium::Driver.new(app, :browser => :chrome)
